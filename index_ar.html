@@ -502,25 +502,33 @@
       
       <div class="card" style="margin-bottom: 2rem;">
         <h3 style="margin-bottom: 1rem; color: var(--accent-navy);"><i class="fa-solid fa-user-check"></i> المراجع العلمية</h3>
-        <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+        <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
           <li class="ref-card-content">
-            <a href="http://univ-biskra.dz" target="_blank" title="جامعة محمد خيضر بسكرة">
-              <img src="images/logo_biskra.png" alt="جامعة بسكرة" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=OCHr2xMAAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> أ.د. فضيل شريف</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">جامعة محمد خيضر، بسكرة</span><br>
-              <a href="mailto:foudil.cherif@univ-biskra.dz" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> foudil.cherif@univ-biskra.dz</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="http://univ-biskra.dz" target="_blank" title="جامعة محمد خيضر بسكرة" onclick="event.stopPropagation();">
+                <img src="images/logo_biskra.png" alt="جامعة بسكرة" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> أ.د. فضيل شريّط</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> جامعة محمد خيضر، بسكرة</span><br>
+              <a href="https://scholar.google.com/citations?user=OCHr2xMAAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> الملف العلمي Google Scholar</a><br>
+              <a href="mailto:foudil.cherif@univ-biskra.dz" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> foudil.cherif@univ-biskra.dz</a>
             </div>
           </li>
           <li class="ref-card-content">
-            <a href="https://www.etsmtl.ca" target="_blank" title="مدرسة ÉTS مونتريال">
-              <img src="images/logo_ets.png" alt="ÉTS مونتريال" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=oG89PhIAAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> أ.د. محمد شريّط</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">مدرسة ÉTS مونتريال، كندا</span><br>
-              <a href="mailto:mohamed.cheriet@etsmtl.ca" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> mohamed.cheriet@etsmtl.ca</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="https://www.etsmtl.ca" target="_blank" title="مدرسة ÉTS مونتريال" onclick="event.stopPropagation();">
+                <img src="images/logo_ets.png" alt="ÉTS مونتريال" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> أ.د. محمد شريّط</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> مدرسة ÉTS مونتريال، كندا</span><br>
+              <a href="https://scholar.google.com/citations?user=oG89PhIAAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> الملف العلمي Google Scholar</a><br>
+              <a href="mailto:mohamed.cheriet@etsmtl.ca" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> mohamed.cheriet@etsmtl.ca</a>
             </div>
           </li>
           <!--
@@ -694,6 +702,11 @@
       navigator.clipboard.writeText(code).then(() => {
         alert('تم نسخ اقتباس BibTeX بنجاح!');
       });
+    }
+
+    function toggleRef(el) {
+      const parent = el.closest('.ref-card-content');
+      parent.classList.toggle('open');
     }
   </script>
 

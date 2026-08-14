@@ -449,19 +449,60 @@ a:hover {
 
 .ref-card-content {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast);
 }
 
-.ref-logo {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-  background: #ffffff;
-  flex-shrink: 0;
+.ref-card-content:hover {
+  border-color: var(--accent-primary);
+}
+
+.ref-header-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  background: var(--bg-surface);
+  user-select: none;
+}
+
+.ref-header-toggle strong {
+  font-size: 1rem;
+  color: var(--accent-navy);
+}
+
+.ref-chevron {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  transition: transform 0.3s ease;
+}
+
+[dir="rtl"] .ref-chevron {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.ref-card-content.open .ref-chevron {
+  transform: rotate(180deg);
+  color: var(--accent-primary);
+}
+
+.ref-body-collapsible {
+  display: none;
+  padding: 0.75rem 1rem 1rem 1rem;
+  border-top: 1px dashed var(--border-color);
+  background: #fafcfe;
+}
+
+.ref-card-content.open .ref-body-collapsible {
+  display: block;
 }
 
 /* Modal for BibTeX */

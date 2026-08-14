@@ -486,57 +486,77 @@
       
       <div class="card" style="margin-bottom: 2rem;">
         <h3 style="margin-bottom: 1rem; color: var(--accent-navy);"><i class="fa-solid fa-user-check"></i> Key References</h3>
-        <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+        <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
           <li class="ref-card-content">
-            <a href="http://univ-biskra.dz" target="_blank" title="Mohamed Khider University Biskra">
-              <img src="images/logo_biskra.png" alt="University of Biskra Logo" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=OCHr2xMAAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> Prof. Foudil Cherif</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">Mohamed Khider University, Biskra</span><br>
-              <a href="mailto:foudil.cherif@univ-biskra.dz" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> foudil.cherif@univ-biskra.dz</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="http://univ-biskra.dz" target="_blank" title="Mohamed Khider University Biskra" onclick="event.stopPropagation();">
+                <img src="images/logo_biskra.png" alt="University of Biskra Logo" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> Prof. Foudil Cherif</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> Mohamed Khider University, Biskra</span><br>
+              <a href="https://scholar.google.com/citations?user=OCHr2xMAAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> Google Scholar Profile</a><br>
+              <a href="mailto:foudil.cherif@univ-biskra.dz" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> foudil.cherif@univ-biskra.dz</a>
             </div>
           </li>
           <li class="ref-card-content">
-            <a href="https://www.etsmtl.ca" target="_blank" title="ÉTS Montreal">
-              <img src="images/logo_ets.png" alt="ÉTS Montreal Logo" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=oG89PhIAAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> Prof. Mohamed Cheriet</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">ÉTS Montreal, Canada</span><br>
-              <a href="mailto:mohamed.cheriet@etsmtl.ca" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> mohamed.cheriet@etsmtl.ca</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="https://www.etsmtl.ca" target="_blank" title="ÉTS Montreal" onclick="event.stopPropagation();">
+                <img src="images/logo_ets.png" alt="ÉTS Montreal Logo" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> Prof. Mohamed Cheriet</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> ÉTS Montreal, Canada</span><br>
+              <a href="https://scholar.google.com/citations?user=oG89PhIAAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> Google Scholar Profile</a><br>
+              <a href="mailto:mohamed.cheriet@etsmtl.ca" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> mohamed.cheriet@etsmtl.ca</a>
             </div>
           </li>
           <!--
           <li class="ref-card-content">
-            <a href="https://www.univ-nantes.fr" target="_blank" title="Nantes Université">
-              <img src="images/logo_nantes.png" alt="Nantes Université Logo" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=-3FlC0QAAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> Prof. Dalila Tamzalit</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">Nantes Université, France</span><br>
-              <a href="mailto:dalila.tamzalit@univ-nantes.fr" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> dalila.tamzalit@univ-nantes.fr</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="https://www.univ-nantes.fr" target="_blank" title="Nantes Université" onclick="event.stopPropagation();">
+                <img src="images/logo_nantes.png" alt="Nantes Université Logo" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> Prof. Dalila Tamzalit</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> Nantes Université, France</span><br>
+              <a href="https://scholar.google.com/citations?user=-3FlC0QAAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> Google Scholar Profile</a><br>
+              <a href="mailto:dalila.tamzalit@univ-nantes.fr" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> dalila.tamzalit@univ-nantes.fr</a>
             </div>
           </li>
           -->
           <li class="ref-card-content">
-            <a href="https://www.univ-lyon2.fr" target="_blank" title="Université Lumière Lyon 2">
-              <img src="images/logo_lyon2.png" alt="University Lyon 2 Logo" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=yolOWJoAAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> Prof. Aicha Sekhari Seklouli</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">University Lumière Lyon2, France</span><br>
-              <a href="mailto:aicha.sekhari@univ-lyon2.fr" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> aicha.sekhari@univ-lyon2.fr</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="https://www.univ-lyon2.fr" target="_blank" title="Université Lumière Lyon 2" onclick="event.stopPropagation();">
+                <img src="images/logo_lyon2.png" alt="University Lyon 2 Logo" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> Prof. Aicha Sekhari Seklouli</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> University Lumière Lyon2, France</span><br>
+              <a href="https://scholar.google.com/citations?user=yolOWJoAAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> Google Scholar Profile</a><br>
+              <a href="mailto:aicha.sekhari@univ-lyon2.fr" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> aicha.sekhari@univ-lyon2.fr</a>
             </div>
           </li>
           <li class="ref-card-content">
-            <a href="https://www.ensia.edu.dz" target="_blank" title="National School of Artificial Intelligence">
-              <img src="images/logo_ensia.png" alt="ENSIA Algiers Logo" class="ref-logo">
-            </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=csbftG4AAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> Dr. Abdelhakim Cheriet</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">National School of AI (ENSIA), Algiers</span><br>
-              <a href="mailto:abdelhakim.cheriet@ensia.edu.dz" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> abdelhakim.cheriet@ensia.edu.dz</a>
+            <div class="ref-header-toggle" onclick="toggleRef(this)">
+              <a href="https://www.ensia.edu.dz" target="_blank" title="National School of Artificial Intelligence" onclick="event.stopPropagation();">
+                <img src="images/logo_ensia.png" alt="ENSIA Algiers Logo" class="ref-logo">
+              </a>
+              <strong><i class="fa-solid fa-graduation-cap"></i> Dr. Abdelhakim Cheriet</strong>
+              <i class="fa-solid fa-chevron-down ref-chevron"></i>
+            </div>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> National School of AI (ENSIA), Algiers</span><br>
+              <a href="https://scholar.google.com/citations?user=csbftG4AAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> Google Scholar Profile</a><br>
+              <a href="mailto:abdelhakim.cheriet@ensia.edu.dz" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> abdelhakim.cheriet@ensia.edu.dz</a>
             </div>
           </li>
         </ul>
@@ -678,6 +698,11 @@
       navigator.clipboard.writeText(code).then(() => {
         alert('BibTeX citation copied to clipboard!');
       });
+    }
+
+    function toggleRef(el) {
+      const parent = el.closest('.ref-card-content');
+      parent.classList.toggle('open');
     }
   </script>
 
