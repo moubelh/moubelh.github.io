@@ -341,8 +341,8 @@ a:hover {
 }
 
 .pub-logo {
-  max-width: 75px;
-  max-height: 55px;
+  max-width: 120px;
+  max-height: 85px;
   object-fit: contain;
   flex-shrink: 0;
 }
