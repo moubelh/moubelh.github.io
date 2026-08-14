@@ -410,6 +410,23 @@ a:hover {
   text-decoration: none;
 }
 
+.ref-card-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ref-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
 /* Modal for BibTeX */
 .modal-backdrop {
   position: fixed;
