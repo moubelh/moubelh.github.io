@@ -86,12 +86,12 @@
     <section class="section-container" style="margin-bottom: 3rem;">
       <h2 class="section-title"><i class="fa-solid fa-brain"></i> Research Interests</h2>
       <div class="tag-cloud">
-        <span class="tag" style="font-size: 1rem; padding: 0.4rem 1rem;"><i class="fa-solid fa-microchip"></i> Artificial Intelligence</span>
-        <span class="tag" style="font-size: 1rem; padding: 0.4rem 1rem;"><i class="fa-solid fa-robot"></i> Deep Learning</span>
-        <span class="tag" style="font-size: 1rem; padding: 0.4rem 1rem;"><i class="fa-solid fa-eye"></i> Computer Vision & Ophthalmology</span>
-        <span class="tag" style="font-size: 1rem; padding: 0.4rem 1rem;"><i class="fa-solid fa-waveform"></i> Speech Emotion Recognition (SER)</span>
-        <span class="tag" style="font-size: 1rem; padding: 0.4rem 1rem;"><i class="fa-solid fa-shield-halved"></i> Danger Theory & Network Security</span>
-        <span class="tag" style="font-size: 1rem; padding: 0.4rem 1rem;"><i class="fa-solid fa-stethoscope"></i> Predictive Health Diagnostics</span>
+        <span class="tag"><i class="fa-solid fa-microchip"></i> Artificial Intelligence</span>
+        <span class="tag"><i class="fa-solid fa-robot"></i> Deep Learning</span>
+        <span class="tag"><i class="fa-solid fa-eye"></i> Computer Vision & Ophthalmology</span>
+        <span class="tag"><i class="fa-solid fa-waveform"></i> Speech Emotion Recognition (SER)</span>
+        <span class="tag"><i class="fa-solid fa-shield-halved"></i> Danger Theory & Network Security</span>
+        <span class="tag"><i class="fa-solid fa-stethoscope"></i> Predictive Health Diagnostics</span>
       </div>
     </section>
 
@@ -144,7 +144,7 @@
       <h2 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Publications & Datasets</h2>
       
       <!-- Datasets & Books -->
-      <h3 style="margin: 1.5rem 0 1rem 0; color: var(--accent-secondary);"><i class="fa-solid fa-database"></i> Datasets & Textbooks</h3>
+      <h3 style="margin: 1.5rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-database"></i> Datasets & Textbooks</h3>
       
       <div class="publication-card">
         <div class="pub-header">
@@ -156,6 +156,7 @@
         <div class="pub-venue">Linguistic Data Consortium (LDC), University of Pennsylvania, Catalog No. LDC2023S10.</div>
         <div class="pub-actions">
           <a href="https://catalog.ldc.upenn.edu/LDC2023S10" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> LDC Catalog Entry</a>
+          <button class="btn-sm" onclick="showBibtex('kedas2023')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
@@ -167,10 +168,13 @@
         <div class="pub-title">Algorithmics and Data Structures 2: Lessons and Exercises with Solutions</div>
         <div class="pub-authors"><strong>Belhadj, M.</strong>, Mazouz, M., & Ameur, K.</div>
         <div class="pub-venue">Series: University Reference Course – First Year. Algiers: ATRST & Office des Publications Universitaires (OPU).</div>
+        <div class="pub-actions">
+          <button class="btn-sm" onclick="showBibtex('belhadj2023textbook')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+        </div>
       </div>
 
       <!-- Journal Articles -->
-      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-secondary);"><i class="fa-solid fa-newspaper"></i> Journal Articles</h3>
+      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-newspaper"></i> Journal Articles</h3>
 
       <div class="publication-card">
         <div class="pub-header"><span class="pub-year">2026</span><span class="pub-type">Journal Article</span></div>
@@ -179,6 +183,7 @@
         <div class="pub-venue">International Journal of Computing and Digital Systems, Vol 19, Issue 1, pp. 1-13.</div>
         <div class="pub-actions">
           <a href="https://journal.uob.edu.bh/bitstreams/e0854fc7-91d5-4d75-b9c1-8eb22088a792" target="_blank" class="btn-sm"><i class="fa-solid fa-file-pdf"></i> Read Article</a>
+          <button class="btn-sm" onclick="showBibtex('djeridi2026fuzzy')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
@@ -189,6 +194,18 @@
         <div class="pub-venue">Engineering, Technology & Applied Science Research, vol 15, Issue 5, pp. 26619–26625.</div>
         <div class="pub-actions">
           <a href="https://etasr.com/index.php/ETASR/article/view/12035" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> ETASR Journal</a>
+          <button class="btn-sm" onclick="showBibtex('belhadj2025emotionnet')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+        </div>
+      </div>
+
+      <div class="publication-card">
+        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">Journal Article</span></div>
+        <div class="pub-title">Arabic Speech Emotion Recognition: Exploring Machine Learning Classifiers and Combinations Based on eGeMAPS-v2 Feature Set</div>
+        <div class="pub-authors">Mazouz, M. & <strong>Belhadj, M.</strong></div>
+        <div class="pub-venue">International Journal of Computing and Digital Systems, vol 18, Issue 2, pp 1-10.</div>
+        <div class="pub-actions">
+          <a href="https://journal.uob.edu.bh/items/327a57df-f5c2-46e1-96a6-7db7a7578175" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> IJCDS Journal</a>
+          <button class="btn-sm" onclick="showBibtex('mazouz2025egemaps')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
@@ -199,6 +216,7 @@
         <div class="pub-venue">International Journal of Prognostics and Health Management, vol 16, Issue 2.</div>
         <div class="pub-actions">
           <a href="https://papers.phmsociety.org/index.php/ijphm/article/view/4274" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> PHM Society</a>
+          <button class="btn-sm" onclick="showBibtex('dida2025attention')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
@@ -209,11 +227,12 @@
         <div class="pub-venue">International Journal of Computing and Digital Systems, Vol 10, Issue 1, pp. 575-583.</div>
         <div class="pub-actions">
           <a href="https://journal.uob.edu.bh/items/e5a4f6c0-7860-4719-be64-b3e5b860c8e2" target="_blank" class="btn-sm"><i class="fa-solid fa-file-pdf"></i> Read Article</a>
+          <button class="btn-sm" onclick="showBibtex('belhadj2021nmfdca')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
       <!-- Conferences -->
-      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-secondary);"><i class="fa-solid fa-users-rectangle"></i> Conference Proceedings</h3>
+      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-users-rectangle"></i> Conference Proceedings</h3>
 
       <div class="publication-card">
         <div class="pub-header"><span class="pub-year">2026</span><span class="pub-type">Springer ICPR</span></div>
@@ -233,6 +252,28 @@
         <div class="pub-venue">ISNIB 2025, IEEE.</div>
         <div class="pub-actions">
           <a href="https://ieeexplore.ieee.org/abstract/document/10983693" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> IEEE Xplore</a>
+          <button class="btn-sm" onclick="showBibtex('dida2025lithium')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+        </div>
+      </div>
+
+      <div class="publication-card">
+        <div class="pub-header"><span class="pub-year">2024</span><span class="pub-type">IEEE Conference</span></div>
+        <div class="pub-title">Prediction of the Remaining Useful Lifetime of Turbofan Aircraft Engines Using Machine Learning: A Comparative Study</div>
+        <div class="pub-authors">Dida, M., <strong>Belhadj, M.</strong>, & Cheriet, A.</div>
+        <div class="pub-venue">EDIS 2024, IEEE.</div>
+        <div class="pub-actions">
+          <a href="https://ieeexplore.ieee.org/document/10783269" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> IEEE Xplore</a>
+          <button class="btn-sm" onclick="showBibtex('dida2024turbofan')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+        </div>
+      </div>
+
+      <div class="publication-card">
+        <div class="pub-header"><span class="pub-year">2022</span><span class="pub-type">IEEE Conference</span></div>
+        <div class="pub-title">KEDAS: A Validated Arabic Speech Emotion Dataset</div>
+        <div class="pub-authors"><strong>Belhadj, M.</strong>, Bendellali, I., & Lakhdari, E.</div>
+        <div class="pub-venue">ISNIB 2022, IEEE.</div>
+        <div class="pub-actions">
+          <button class="btn-sm" onclick="showBibtex('belhadj2022kedasconf')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
@@ -283,11 +324,11 @@
     <section id="experience" style="margin-bottom: 3rem;">
       <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experience & Degrees</h2>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
         
         <!-- Experience Timeline -->
         <div>
-          <h3 style="margin-bottom: 1.25rem; color: var(--accent-secondary);"><i class="fa-solid fa-building-columns"></i> Career Experience</h3>
+          <h3 style="margin-bottom: 1.25rem; color: var(--accent-navy);"><i class="fa-solid fa-building-columns"></i> Career Experience</h3>
           
           <div class="timeline-item">
             <div class="timeline-date">2026 -- Present</div>
@@ -316,7 +357,7 @@
 
         <!-- Degrees -->
         <div>
-          <h3 style="margin-bottom: 1.25rem; color: var(--accent-secondary);"><i class="fa-solid fa-award"></i> Academic Degrees</h3>
+          <h3 style="margin-bottom: 1.25rem; color: var(--accent-navy);"><i class="fa-solid fa-award"></i> Academic Degrees</h3>
           
           <div class="timeline-item">
             <div class="timeline-date">2021</div>
@@ -346,8 +387,8 @@
       <h2 class="section-title"><i class="fa-solid fa-address-book"></i> Academic References & Contact</h2>
       
       <div class="card" style="margin-bottom: 2rem;">
-        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-user-check"></i> Key References</h3>
-        <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+        <h3 style="margin-bottom: 1rem; color: var(--accent-navy);"><i class="fa-solid fa-user-check"></i> Key References</h3>
+        <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
           <li>
             <strong>Prof. Foudil Cherif</strong><br>
             <span style="color: var(--text-muted); font-size: 0.9rem;">Mohamed Khider University, Biskra</span><br>
@@ -379,11 +420,11 @@
   <div id="bibtexModal" class="modal-backdrop">
     <div class="modal-box">
       <div class="modal-header">
-        <h3 style="color: var(--accent-primary);"><i class="fa-solid fa-quote-left"></i> BibTeX Citation</h3>
+        <h3 style="color: var(--accent-navy);"><i class="fa-solid fa-quote-left"></i> BibTeX Citation Export</h3>
         <button class="modal-close" onclick="hideBibtex()">&times;</button>
       </div>
       <pre class="bibtex-code" id="bibtexContent"></pre>
-      <button class="btn-sm" style="width: 100%; justify-content: center;" onclick="copyBibtex()"><i class="fa-solid fa-copy"></i> Copy to Clipboard</button>
+      <button class="btn-sm" style="width: 100%; justify-content: center; background: var(--tag-bg); color: var(--tag-text); font-weight: 600;" onclick="copyBibtex()"><i class="fa-solid fa-copy"></i> Copy BibTeX to Clipboard</button>
     </div>
   </div>
 
@@ -402,6 +443,86 @@
   pages={476--490},
   year={2026},
   organization={Springer}
+}`,
+      'kedas2023': `@misc{belhadj2023kedas,
+  title={Kasdi-Merbah University Emotional Database in Arabic Speech (KEDAS)},
+  author={Belhadj, Mourad and Bendellali, Issam and Lakhdari, Elhocine},
+  year={2023},
+  publisher={Linguistic Data Consortium (LDC), University of Pennsylvania},
+  note={LDC Catalog No. LDC2023S10}
+}`,
+      'belhadj2023textbook': `@book{belhadj2023algorithmics,
+  title={Algorithmics and Data Structures 2: Lessons and Exercises with Solutions},
+  author={Belhadj, Mourad and Mazouz, Mourad and Ameur, Kamel},
+  year={2023},
+  publisher={ATRST \\& Office des Publications Universitaires (OPU)},
+  series={University Reference Course -- First Year},
+  address={Algiers, Algeria}
+}`,
+      'djeridi2026fuzzy': `@article{djeridi2026efficient,
+  title={An Efficient Fuzzy Neural Network for Arabic Speech Emotion Recognition},
+  author={Djeridi, Dalel and Said, Bachir and Belhadj, Mourad},
+  journal={International Journal of Computing and Digital Systems},
+  volume={19},
+  number={1},
+  pages={1--13},
+  year={2026}
+}`,
+      'belhadj2025emotionnet': `@article{belhadj2025emotionnet,
+  title={EmotionNet: A Novel Hybrid Deep Learning Model for Arabic Speech Emotion Recognition},
+  author={Belhadj, Mourad and Mazouz, Mourad and Djeridi, Dalel},
+  journal={Engineering, Technology \\& Applied Science Research},
+  volume={15},
+  number={5},
+  pages={26619--26625},
+  year={2025}
+}`,
+      'mazouz2025egemaps': `@article{mazouz2025arabic,
+  title={Arabic Speech Emotion Recognition: Exploring Machine Learning Classifiers and Combinations Based on eGeMAPS-v2 Feature Set},
+  author={Mazouz, Mourad and Belhadj, Mourad},
+  journal={International Journal of Computing and Digital Systems},
+  volume={18},
+  number={2},
+  pages={1--10},
+  year={2025}
+}`,
+      'dida2025attention': `@article{dida2025remaining,
+  title={Remaining Useful Life Prediction Using Attention-LSTM Neural Network of Aircraft Engines},
+  author={Dida, Merouane and Cheriet, Abdelhakim and Belhadj, Mourad},
+  journal={International Journal of Prognostics and Health Management},
+  volume={16},
+  number={2},
+  year={2025}
+}`,
+      'belhadj2021nmfdca': `@article{belhadj2021nmf,
+  title={NMF-DCA: An Efficient Dendritic Cell Algorithm Based on Non-Negative Matrix Factorization},
+  author={Belhadj, Mourad and Cherif, Foudil and Cheriet, Mohamed},
+  journal={International Journal of Computing and Digital Systems},
+  volume={10},
+  number={1},
+  pages={575--583},
+  year={2021}
+}`,
+      'dida2025lithium': `@inproceedings{dida2025prognostics,
+  title={Prognostics of the Lithium-Ion Battery Based on Deep Learning Algorithms: Comparative Study},
+  author={Dida, Merouane and Belhadj, Mourad and Cheriet, Abdelhakim},
+  booktitle={IEEE International Symposium on Networking and Industrial Automation (ISNIB)},
+  year={2025},
+  organization={IEEE}
+}`,
+      'dida2024turbofan': `@inproceedings{dida2024prediction,
+  title={Prediction of the Remaining Useful Lifetime of Turbofan Aircraft Engines Using Machine Learning: A Comparative Study},
+  author={Dida, Merouane and Belhadj, Mourad and Cheriet, Abdelhakim},
+  booktitle={IEEE EDIS Conference},
+  year={2024},
+  organization={IEEE}
+}`,
+      'belhadj2022kedasconf': `@inproceedings{belhadj2022kedas,
+  title={KEDAS: A Validated Arabic Speech Emotion Dataset},
+  author={Belhadj, Mourad and Bendellali, Issam and Lakhdari, Elhocine},
+  booktitle={IEEE International Symposium on Networking and Industrial Automation (ISNIB)},
+  year={2022},
+  organization={IEEE}
 }`
     };
 
@@ -417,7 +538,7 @@
     function copyBibtex() {
       const code = document.getElementById('bibtexContent').textContent;
       navigator.clipboard.writeText(code).then(() => {
-        alert('BibTeX copied to clipboard!');
+        alert('BibTeX citation copied to clipboard!');
       });
     }
   </script>
