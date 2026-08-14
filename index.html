@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Mourad Belhadj | Academic Biography & Research</title>
-  <meta name="description" content="Academic biography, research publications, and curriculum vitae of Dr. Mourad Belhadj, Associate Lecturer in Computer Science & AI at Kasdi Merbah University of Ouargla.">
+  <title>الدكتور مراد بلحاج | السيرة الأكاديمية والبحوث</title>
+  <meta name="description" content="السيرة الذاتية والأكاديمية، المنشورات العلمية، والبحوث للدكتور مراد بلحاج، أستاذ محاضر (أ) في الذكاء الاصطناعي بجامعة ورقلة.">
   
   <!-- Google Fonts & Font Awesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Cairo', 'Inter', -apple-system, sans-serif;
+    }
+    .timeline-item {
+      padding-left: 0;
+      padding-right: 1.75rem;
+      border-left: none;
+      border-right: 2px solid #cbd5e1;
+    }
+    .timeline-item::before {
+      left: auto;
+      right: -7px;
+    }
+    .pub-title, .pub-authors, .pub-venue {
+      direction: ltr;
+      text-align: right;
+    }
+    pre.bibtex-code {
+      direction: ltr;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,15 +43,15 @@
   <nav class="navbar">
     <div class="nav-container">
       <a href="#" class="nav-brand">
-        <i class="fa-solid fa-graduation-cap"></i> Dr. Mourad Belhadj
+        <i class="fa-solid fa-graduation-cap"></i> د. مراد بلحاج
       </a>
       <ul class="nav-links">
-        <li><a href="#about" class="active">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#supervision">Supervision</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="active">نبذة عني</a></li>
+        <li><a href="#research">البحوث والمشاريع</a></li>
+        <li><a href="#publications">المنشورات العلمية</a></li>
+        <li><a href="#supervision">الإشراف الأكاديمي</a></li>
+        <li><a href="#experience">الخبرة والشهادات</a></li>
+        <li><a href="#contact">التواصل</a></li>
       </ul>
     </div>
   </nav>
@@ -40,26 +63,25 @@
       <div class="profile-avatar-wrapper">
         <div class="avatar-placeholder">
           MB
-          <div class="avatar-subtitle">Dr. Mourad Belhadj</div>
+          <div class="avatar-subtitle">د. مراد بلحاج</div>
         </div>
       </div>
       
       <div class="hero-content">
-        <h1>Dr. Mourad Belhadj</h1>
-        <div class="hero-title-sub">Associate Lecturer (Habilitated) in Computer Science & AI</div>
+        <h1>الدكتور مراد بلحاج</h1>
+        <div class="hero-title-sub">أستاذ محاضر "أ" (مؤهل) في الإعلام الآلي والذكاء الاصطناعي</div>
         
         <div class="hero-affiliation">
-          <span><i class="fa-solid fa-building-columns"></i> Kasdi Merbah University of Ouargla, Department of Computer Science</span>
-          <span><i class="fa-solid fa-location-dot"></i> Route de Ghardaïa, Ouargla, Algeria</span>
+          <span><i class="fa-solid fa-building-columns"></i> جامعة قاصدي مرباح ورقلة، قسم الإعلام الآلي</span>
+          <span><i class="fa-solid fa-location-dot"></i> طريق غرداية، ورقلة، الجزائر</span>
         </div>
 
         <p class="hero-bio">
-          Dr. Mourad Belhadj is a researcher and lecturer in Computer Science whose work bridges 
-          <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong>. His research focuses on developing 
-          hybrid deep learning models and datasets for <strong>Speech Emotion Recognition (SER)</strong>, 
-          <strong>Ophthalmology (Diabetic Retinopathy & Glaucoma)</strong>, and <strong>Smart Systems</strong>. 
-          Through interdisciplinary international collaborations, he advances AI solutions tailored to the Arabic language 
-          and regional health contexts.
+          الدكتور مراد بلحاج أستاذ وباحث في قسم الإعلام الآلي يركز في أبحاثه على الربط بين 
+          <strong>الذكاء الاصطناعي</strong> و <strong>التعلم العميق</strong>. تتركز أعماله على تطوير النماذج الهجينة 
+          وقواعد البيانات المخصصة لـ <strong>التعرف على المشاعر من الكلام (Speech Emotion Recognition)</strong>، 
+          و<strong>أمراض العيون (الاعتلال الشبكي السكري والمياه الزرقاء)</strong>، و<strong>الأنظمة الذكية</strong>. 
+          ومن خلال التعاون الأكاديمي الدولي والمحلي، يساهم في تطوير حلول ذكاء اصطناعي موجهة للغة العربية والقطاع الصحي الإقليمي.
         </p>
 
         <div class="social-links">
@@ -76,7 +98,7 @@
             <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
           <a href="mailto:belhadj.mourad@univ-ouargla.dz" class="social-btn">
-            <i class="fa-solid fa-envelope"></i> Email
+            <i class="fa-solid fa-envelope"></i> البريد الإلكتروني
           </a>
         </div>
       </div>
@@ -84,56 +106,56 @@
 
     <!-- Research Interests -->
     <section class="section-container" style="margin-bottom: 3rem;">
-      <h2 class="section-title"><i class="fa-solid fa-brain"></i> Research Interests</h2>
+      <h2 class="section-title"><i class="fa-solid fa-brain"></i> مجالات اهتمام البحث العلمي</h2>
       <div class="tag-cloud">
-        <span class="tag"><i class="fa-solid fa-microchip"></i> Artificial Intelligence</span>
-        <span class="tag"><i class="fa-solid fa-robot"></i> Deep Learning</span>
-        <span class="tag"><i class="fa-solid fa-eye"></i> Computer Vision & Ophthalmology</span>
-        <span class="tag"><i class="fa-solid fa-waveform"></i> Speech Emotion Recognition (SER)</span>
-        <span class="tag"><i class="fa-solid fa-shield-halved"></i> Danger Theory & Network Security</span>
-        <span class="tag"><i class="fa-solid fa-stethoscope"></i> Predictive Health Diagnostics</span>
+        <span class="tag"><i class="fa-solid fa-microchip"></i> الذكاء الاصطناعي (Artificial Intelligence)</span>
+        <span class="tag"><i class="fa-solid fa-robot"></i> التعلم العميق (Deep Learning)</span>
+        <span class="tag"><i class="fa-solid fa-eye"></i> الرؤية الحاسوبية طب العيون (Computer Vision)</span>
+        <span class="tag"><i class="fa-solid fa-waveform"></i> التعرف على المشاعر من الكلام (SER)</span>
+        <span class="tag"><i class="fa-solid fa-shield-halved"></i> نظرية الخطر وأمن الشبكات (Danger Theory)</span>
+        <span class="tag"><i class="fa-solid fa-stethoscope"></i> التشخيص الصحي التنبئي</span>
       </div>
     </section>
 
     <!-- Active Research Projects & Grants -->
     <section id="research" style="margin-bottom: 3rem;">
-      <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Key Research Projects</h2>
+      <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> المشاريع البحثية الرئيسية</h2>
       <div class="grid-2">
         <div class="card">
-          <div style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2024 -- Present</div>
-          <h3>AI in Ophthalmology & Medical Imaging</h3>
+          <div style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2024 -- الحاضر</div>
+          <h3>الذكاء الاصطناعي في طب العيون والتصوير الطبي</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
-            Joint collaboration with LINATI Laboratory & Hospital of Ophthalmology, Ouargla. 
-            Developing deep learning architectures and microservices software for diabetic retinopathy 
-            and glaucoma detection in Algerian hospital networks.
+            مشروع مشترك بين مخبر LINATI ومستشفى طب العيون بورقلة. 
+            تطوير معماريات تعلم عميق وبرمجيات الخدمات المصغرة لتشخيص الاعتلال الشبكي السكري 
+            والمياه الزرقاء في المستشفيات الجزائرية.
           </p>
         </div>
 
         <div class="card">
-          <div style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2022 -- Present</div>
-          <h3>Arabic Speech Emotion Recognition (KEDAS & EmotionNet)</h3>
+          <div style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2022 -- الحاضر</div>
+          <h3>التعرف على المشاعر من الكلام العربي (KEDAS & EmotionNet)</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
-            Construction of the validated Kasdi-Merbah University Emotional Database in Arabic Speech (KEDAS, published by LDC/UPenn) 
-            and engineering novel hybrid EmotionNet models combining acoustic & spectrogram features.
+            إنشاء وتوثيق قاعدة البيانات الصوتية العربية KEDAS (المنشورة عبر LDC بجامعة بنسلفانيا) 
+            وتطوير نموذج EmotionNet الهجين الذي يدمج الميزات الصوتية والصور الطيفية.
           </p>
         </div>
 
         <div class="card">
           <div style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2020 -- 2024</div>
-          <h3>DIGITAQ Erasmus+ CBHE Project</h3>
+          <h3>مشروع DIGITAQ ضمن برنامج Erasmus+ الأوروبي</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
-            <strong>Local Coordinator & Key Member</strong> (EU Grant No. 617768-EPP-1-2020-1-DZ-EPPKA2-CBHE-SP). 
-            Creation of digital capacities for Quality Assurance management across Algerian Higher Education institutions. 
+            <strong>المنسق المحلي والعضو الرئيسي</strong> (مشروع رقم 617768-EPP-1-2020-1-DZ-EPPKA2-CBHE-SP). 
+            تطوير القدرات الرقمية لإدارة ضمان الجودة في مؤسسات التعليم العالي الجزائرية. 
             (<a href="https://www.digitaq.eu" target="_blank">www.digitaq.eu</a>)
           </p>
         </div>
 
         <div class="card">
           <div style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2015 -- 2016</div>
-          <h3>Doctoral Research at Syncromedia Lab (ÉTS Montreal)</h3>
+          <h3>بحث دكتوراه بمخبر Syncromedia (مدرسة التكنولوجيا العليا مونتريال)</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">
-            National Exceptional Program Internship at École de Technologie Supérieure (ÉTS), Montreal, Canada. 
-            Conducted research on bio-inspired artificial immune systems and Non-Negative Matrix Factorization (NMF-DCA).
+            تربص ضمن البرنامج الوطني الاستثنائي بمدرسة التكنولوجيا العليا (ÉTS) بمونتريال، كندا. 
+            إجراء بحوث حول الأنظمة المناعية الاصطناعية وتفكيك المصفوفات غير السالبة (NMF-DCA).
           </p>
         </div>
       </div>
@@ -141,21 +163,21 @@
 
     <!-- Publications Section -->
     <section id="publications" style="margin-bottom: 3rem;">
-      <h2 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Publications & Datasets</h2>
+      <h2 class="section-title"><i class="fa-solid fa-book-bookmark"></i> المنشورات العلمية وقواعد البيانات</h2>
       
       <!-- Datasets & Books -->
-      <h3 style="margin: 1.5rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-database"></i> Datasets & Textbooks</h3>
+      <h3 style="margin: 1.5rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-database"></i> قواعد البيانات والكتب المنهجية</h3>
       
       <div class="publication-card">
         <div class="pub-header">
           <span class="pub-year">2023</span>
-          <span class="pub-type">LDC Benchmark Dataset</span>
+          <span class="pub-type">قاعدة بيانات معتمدة (LDC)</span>
         </div>
         <div class="pub-title">Kasdi-Merbah University Emotional Database in Arabic Speech (KEDAS)</div>
         <div class="pub-authors"><strong>Belhadj, M.</strong>, Bendellali, I., & Lakhdari, E.</div>
         <div class="pub-venue">Linguistic Data Consortium (LDC), University of Pennsylvania, Catalog No. LDC2023S10.</div>
         <div class="pub-actions">
-          <a href="https://catalog.ldc.upenn.edu/LDC2023S10" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> LDC Catalog Entry</a>
+          <a href="https://catalog.ldc.upenn.edu/LDC2023S10" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> رابط LDC</a>
           <button class="btn-sm" onclick="showBibtex('kedas2023')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
@@ -163,7 +185,7 @@
       <div class="publication-card">
         <div class="pub-header">
           <span class="pub-year">2023</span>
-          <span class="pub-type">University Textbook</span>
+          <span class="pub-type">كتاب جامعي</span>
         </div>
         <div class="pub-title">Algorithmics and Data Structures 2: Lessons and Exercises with Solutions</div>
         <div class="pub-authors"><strong>Belhadj, M.</strong>, Mazouz, M., & Ameur, K.</div>
@@ -174,68 +196,68 @@
       </div>
 
       <!-- Journal Articles -->
-      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-newspaper"></i> Journal Articles</h3>
+      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-newspaper"></i> المقالات العلمية المحكمة</h3>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2026</span><span class="pub-type">Journal Article</span></div>
+        <div class="pub-header"><span class="pub-year">2026</span><span class="pub-type">مقال علمي</span></div>
         <div class="pub-title">An Efficient Fuzzy Neural Network for Arabic Speech Emotion Recognition</div>
         <div class="pub-authors">Djeridi, D., Said, B., & <strong>Belhadj, M.</strong></div>
         <div class="pub-venue">International Journal of Computing and Digital Systems, Vol 19, Issue 1, pp. 1-13.</div>
         <div class="pub-actions">
-          <a href="https://journal.uob.edu.bh/bitstreams/e0854fc7-91d5-4d75-b9c1-8eb22088a792" target="_blank" class="btn-sm"><i class="fa-solid fa-file-pdf"></i> Read Article</a>
+          <a href="https://journal.uob.edu.bh/bitstreams/e0854fc7-91d5-4d75-b9c1-8eb22088a792" target="_blank" class="btn-sm"><i class="fa-solid fa-file-pdf"></i> قراءة المقال</a>
           <button class="btn-sm" onclick="showBibtex('djeridi2026fuzzy')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">Journal Article</span></div>
+        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">مقال علمي</span></div>
         <div class="pub-title">EmotionNet: A Novel Hybrid Deep Learning Model for Arabic Speech Emotion Recognition</div>
         <div class="pub-authors"><strong>Belhadj, M.</strong>, Mazouz, M., & Djeridi, D.</div>
         <div class="pub-venue">Engineering, Technology & Applied Science Research, vol 15, Issue 5, pp. 26619–26625.</div>
         <div class="pub-actions">
-          <a href="https://etasr.com/index.php/ETASR/article/view/12035" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> ETASR Journal</a>
+          <a href="https://etasr.com/index.php/ETASR/article/view/12035" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> مجلة ETASR</a>
           <button class="btn-sm" onclick="showBibtex('belhadj2025emotionnet')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">Journal Article</span></div>
+        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">مقال علمي</span></div>
         <div class="pub-title">Arabic Speech Emotion Recognition: Exploring Machine Learning Classifiers and Combinations Based on eGeMAPS-v2 Feature Set</div>
         <div class="pub-authors">Mazouz, M. & <strong>Belhadj, M.</strong></div>
         <div class="pub-venue">International Journal of Computing and Digital Systems, vol 18, Issue 2, pp 1-10.</div>
         <div class="pub-actions">
-          <a href="https://journal.uob.edu.bh/items/327a57df-f5c2-46e1-96a6-7db7a7578175" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> IJCDS Journal</a>
+          <a href="https://journal.uob.edu.bh/items/327a57df-f5c2-46e1-96a6-7db7a7578175" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> مجلة IJCDS</a>
           <button class="btn-sm" onclick="showBibtex('mazouz2025egemaps')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">Journal Article</span></div>
+        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">مقال علمي</span></div>
         <div class="pub-title">Remaining Useful Life Prediction Using Attention-LSTM Neural Network of Aircraft Engines</div>
         <div class="pub-authors">Dida, M., Cheriet, A., & <strong>Belhadj, M.</strong></div>
         <div class="pub-venue">International Journal of Prognostics and Health Management, vol 16, Issue 2.</div>
         <div class="pub-actions">
-          <a href="https://papers.phmsociety.org/index.php/ijphm/article/view/4274" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> PHM Society</a>
+          <a href="https://papers.phmsociety.org/index.php/ijphm/article/view/4274" target="_blank" class="btn-sm"><i class="fa-solid fa-external-link"></i> مجلة PHM</a>
           <button class="btn-sm" onclick="showBibtex('dida2025attention')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2021</span><span class="pub-type">Journal Article</span></div>
+        <div class="pub-header"><span class="pub-year">2021</span><span class="pub-type">مقال علمي</span></div>
         <div class="pub-title">NMF-DCA: An Efficient Dendritic Cell Algorithm Based on Non-Negative Matrix Factorization</div>
         <div class="pub-authors"><strong>Belhadj, M.</strong>, Cherif, F., & Cheriet, M.</div>
         <div class="pub-venue">International Journal of Computing and Digital Systems, Vol 10, Issue 1, pp. 575-583.</div>
         <div class="pub-actions">
-          <a href="https://journal.uob.edu.bh/items/e5a4f6c0-7860-4719-be64-b3e5b860c8e2" target="_blank" class="btn-sm"><i class="fa-solid fa-file-pdf"></i> Read Article</a>
+          <a href="https://journal.uob.edu.bh/items/e5a4f6c0-7860-4719-be64-b3e5b860c8e2" target="_blank" class="btn-sm"><i class="fa-solid fa-file-pdf"></i> قراءة المقال</a>
           <button class="btn-sm" onclick="showBibtex('belhadj2021nmfdca')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
         </div>
       </div>
 
       <!-- Conferences -->
-      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-users-rectangle"></i> Conference Proceedings</h3>
+      <h3 style="margin: 2rem 0 1rem 0; color: var(--accent-navy);"><i class="fa-solid fa-users-rectangle"></i> المؤتمرات والملتقيات الدولية</h3>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2026</span><span class="pub-type">Springer ICPR</span></div>
+        <div class="pub-header"><span class="pub-year">2026</span><span class="pub-type">مؤتمر ICPR Springer</span></div>
         <div class="pub-title">Comparative Evaluation of Deep Learning Architectures and Training Strategies for Diabetic Retinopathy Classification</div>
         <div class="pub-authors">BenHabireche, M. L., <strong>Belhadj, M.</strong>, Tamzalit, D. & Aiadi, O.</div>
         <div class="pub-venue">International Conference on Pattern Recognition (ICPR 2026), Lyon, France, Springer, pp. 476--490.</div>
@@ -246,7 +268,7 @@
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">IEEE Conference</span></div>
+        <div class="pub-header"><span class="pub-year">2025</span><span class="pub-type">مؤتمر IEEE</span></div>
         <div class="pub-title">Prognostics of the Lithium-Ion Battery Based on Deep Learning Algorithms: Comparative Study</div>
         <div class="pub-authors">Dida, M., <strong>Belhadj, M.</strong>, & Cheriet, A.</div>
         <div class="pub-venue">ISNIB 2025, IEEE.</div>
@@ -257,7 +279,7 @@
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2024</span><span class="pub-type">IEEE Conference</span></div>
+        <div class="pub-header"><span class="pub-year">2024</span><span class="pub-type">مؤتمر IEEE</span></div>
         <div class="pub-title">Prediction of the Remaining Useful Lifetime of Turbofan Aircraft Engines Using Machine Learning: A Comparative Study</div>
         <div class="pub-authors">Dida, M., <strong>Belhadj, M.</strong>, & Cheriet, A.</div>
         <div class="pub-venue">EDIS 2024, IEEE.</div>
@@ -268,7 +290,7 @@
       </div>
 
       <div class="publication-card">
-        <div class="pub-header"><span class="pub-year">2022</span><span class="pub-type">IEEE Conference</span></div>
+        <div class="pub-header"><span class="pub-year">2022</span><span class="pub-type">مؤتمر IEEE</span></div>
         <div class="pub-title">KEDAS: A Validated Arabic Speech Emotion Dataset</div>
         <div class="pub-authors"><strong>Belhadj, M.</strong>, Bendellali, I., & Lakhdari, E.</div>
         <div class="pub-venue">ISNIB 2022, IEEE.</div>
@@ -281,39 +303,39 @@
 
     <!-- PhD Supervision -->
     <section id="supervision" style="margin-bottom: 3rem;">
-      <h2 class="section-title"><i class="fa-solid fa-user-graduate"></i> Doctoral Student Supervision</h2>
+      <h2 class="section-title"><i class="fa-solid fa-user-graduate"></i> الإشراف على أطروحات الدكتوراه</h2>
       <div class="grid-2">
         
         <div class="card">
-          <div style="color: var(--accent-primary); font-weight: 700;">Ph.D. Candidate (2025 -- Present)</div>
-          <h3 style="margin: 0.4rem 0;">Mohamed Lamine BenHabireche</h3>
+          <div style="color: var(--accent-primary); font-weight: 700;">طالب دكتوراه (2025 -- الحاضر)</div>
+          <h3 style="margin: 0.4rem 0;">محمد الأمين بن حبيرش</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem;">
-            <strong>Topic:</strong> <em>Ophthalmological Dataset Engineering Enabled by a Microservices-Based Software Architecture for Diabetic Retinopathy Detection in Algerian Hospitals.</em>
+            <strong>الموضوع:</strong> <em>Ophthalmological Dataset Engineering Enabled by a Microservices-Based Software Architecture for Diabetic Retinopathy Detection in Algerian Hospitals.</em>
           </p>
           <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--tag-text);">
-            Joint supervision with Pr. Dalila Tamzalit (Nantes University, France) & Pr. Oussama Aiadi.
+            أطروحة دكتوراه مشتركة (Joint thesis) مع أ.د. دليلة تمزليت (جامعة نانت، فرنسا) و أ.د. أسامة عيادي.
           </div>
         </div>
 
         <div class="card">
-          <div style="color: var(--accent-primary); font-weight: 700;">Ph.D. Candidate (2021 -- 2026)</div>
-          <h3 style="margin: 0.4rem 0;">Dalel Djeridi</h3>
+          <div style="color: var(--accent-primary); font-weight: 700;">طالبة دكتوراه (2021 -- 2026)</div>
+          <h3 style="margin: 0.4rem 0;">دليل جريدي</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem;">
-            <strong>Topic:</strong> <em>A New Arabic Speech Emotion Recognition Framework.</em>
+            <strong>الموضوع:</strong> <em>A New Arabic Speech Emotion Recognition Framework.</em>
           </p>
           <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--tag-text);">
-            Main supervisor (co-supervised with Pr. Bachir Said).
+            المشرف الرئيسي (إشراف مشترك مع أ.د. بشير سعيد).
           </div>
         </div>
 
         <div class="card">
-          <div style="color: var(--accent-primary); font-weight: 700;">Ph.D. Candidate (2023 -- 2026)</div>
-          <h3 style="margin: 0.4rem 0;">Merouane Dida</h3>
+          <div style="color: var(--accent-primary); font-weight: 700;">طالب دكتوراه (2023 -- 2026)</div>
+          <h3 style="margin: 0.4rem 0;">مروان ديدح</h3>
           <p style="color: var(--text-muted); font-size: 0.95rem;">
-            <strong>Topic:</strong> <em>Data-Driven Diagnosis: A Machine Learning Methodology for Predictive Health Management.</em>
+            <strong>الموضوع:</strong> <em>Data-Driven Diagnosis: A Machine Learning Methodology for Predictive Health Management.</em>
           </p>
           <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--tag-text);">
-            Main supervisor.
+            المشرف الرئيسي.
           </div>
         </div>
 
@@ -322,60 +344,60 @@
 
     <!-- Professional Experience & Degrees -->
     <section id="experience" style="margin-bottom: 3rem;">
-      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experience & Degrees</h2>
+      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> الخبرة والشهادات الأكاديمية</h2>
       
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
         
         <!-- Experience Timeline -->
         <div>
-          <h3 style="margin-bottom: 1.25rem; color: var(--accent-navy);"><i class="fa-solid fa-building-columns"></i> Career Experience</h3>
+          <h3 style="margin-bottom: 1.25rem; color: var(--accent-navy);"><i class="fa-solid fa-building-columns"></i> مسار المسيرة المهنية</h3>
           
           <div class="timeline-item">
-            <div class="timeline-date">2026 -- Present</div>
-            <div class="timeline-title">Associate Lecturer (Habilitated)</div>
-            <div class="timeline-subtitle">Kasdi Merbah University of Ouargla, Dept of Computer Science</div>
+            <div class="timeline-date">2026 -- الحاضر</div>
+            <div class="timeline-title">أستاذ محاضر "أ" (مؤهل)</div>
+            <div class="timeline-subtitle">جامعة قاصدي مرباح ورقلة، قسم الإعلام الآلي</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-date">2021 -- 2026</div>
-            <div class="timeline-title">Associate Lecturer</div>
-            <div class="timeline-subtitle">Kasdi Merbah University of Ouargla</div>
+            <div class="timeline-title">أستاذ محاضر "ب"</div>
+            <div class="timeline-subtitle">جامعة قاصدي مرباح ورقلة</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-date">2017 -- 2020</div>
-            <div class="timeline-title">Head of Specialization -- Bachelor in Information Systems</div>
-            <div class="timeline-subtitle">Faculty of New Information & Communication Technologies</div>
+            <div class="timeline-title">مسؤول التخصص -- ليسانس أنظمة المعلومات</div>
+            <div class="timeline-subtitle">كلية تكنولوجيات المعلومات الحديثة والاتصال</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-date">2015 -- 2016</div>
-            <div class="timeline-title">Doctoral Research Intern</div>
-            <div class="timeline-subtitle">Syncromedia Lab, ÉTS Montreal, Canada</div>
+            <div class="timeline-title">باحث دكتوراه زائر</div>
+            <div class="timeline-subtitle">مخبر Syncromedia، مدرسة ÉTS مونتريال، كندا</div>
           </div>
         </div>
 
         <!-- Degrees -->
         <div>
-          <h3 style="margin-bottom: 1.25rem; color: var(--accent-navy);"><i class="fa-solid fa-award"></i> Academic Degrees</h3>
+          <h3 style="margin-bottom: 1.25rem; color: var(--accent-navy);"><i class="fa-solid fa-award"></i> الشهادات الأكاديمية</h3>
           
           <div class="timeline-item">
             <div class="timeline-date">2021</div>
-            <div class="timeline-title">Ph.D. in Computer Science (Artificial Intelligence)</div>
-            <div class="timeline-subtitle">Mohamed Khider University, Biskra | Honors: Very Honorable</div>
-            <div style="font-size: 0.85rem; color: var(--text-dim);">Thesis: Securité informatique basée sur la théorie de danger</div>
+            <div class="timeline-title">دكتوراه في الإعلام الآلي (الذكاء الاصطناعي)</div>
+            <div class="timeline-subtitle">جامعة محمد خيضر بسكرة | التقدير: مشرف جداً</div>
+            <div style="font-size: 0.85rem; color: var(--text-dim);">عنوان الأطروحة: Securité informatique basée sur la théorie de danger</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-date">2008</div>
-            <div class="timeline-title">Magister in Computer Science (AI & Advanced Systems)</div>
-            <div class="timeline-subtitle">Mohamed Khider University, Biskra | Honors: Good</div>
+            <div class="timeline-title">ماجستير في الإعلام الآلي (الذكاء الاصطناعي والأنظمة المتقدمة)</div>
+            <div class="timeline-subtitle">جامعة محمد خيضر بسكرة | التقدير: قريب من الحسن</div>
           </div>
 
           <div class="timeline-item">
             <div class="timeline-date">2004</div>
-            <div class="timeline-title">State Engineering Degree in Computer Science</div>
-            <div class="timeline-subtitle">Mohamed Khider University, Biskra | Specialization: Industrial Computing</div>
+            <div class="timeline-title">شهادة مهندس دولة في الإعلام الآلي</div>
+            <div class="timeline-subtitle">جامعة محمد خيضر بسكرة | التخصص: الإعلام الآلي الصناعي</div>
           </div>
         </div>
 
@@ -384,29 +406,29 @@
 
     <!-- References & Contact -->
     <section id="contact">
-      <h2 class="section-title"><i class="fa-solid fa-address-book"></i> Academic References & Contact</h2>
+      <h2 class="section-title"><i class="fa-solid fa-address-book"></i> المراجع الأكاديمية والتواصل</h2>
       
       <div class="card" style="margin-bottom: 2rem;">
-        <h3 style="margin-bottom: 1rem; color: var(--accent-navy);"><i class="fa-solid fa-user-check"></i> Key References</h3>
+        <h3 style="margin-bottom: 1rem; color: var(--accent-navy);"><i class="fa-solid fa-user-check"></i> المراجع العلمية</h3>
         <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
           <li>
-            <strong>Prof. Foudil Cherif</strong><br>
-            <span style="color: var(--text-muted); font-size: 0.9rem;">Mohamed Khider University, Biskra</span><br>
+            <strong>أ.د. فضيل شريف</strong><br>
+            <span style="color: var(--text-muted); font-size: 0.9rem;">جامعة محمد خيضر، بسكرة</span><br>
             <a href="mailto:foudil.cherif@univ-biskra.dz"><i class="fa-solid fa-envelope"></i> foudil.cherif@univ-biskra.dz</a>
           </li>
           <li>
-            <strong>Prof. Mohamed Cheriet</strong><br>
-            <span style="color: var(--text-muted); font-size: 0.9rem;">ÉTS Montreal, Canada</span><br>
+            <strong>أ.د. محمد شريّط</strong><br>
+            <span style="color: var(--text-muted); font-size: 0.9rem;">مدرسة ÉTS مونتريال، كندا</span><br>
             <a href="mailto:mohamed.cheriet@etsmtl.ca"><i class="fa-solid fa-envelope"></i> mohamed.cheriet@etsmtl.ca</a>
           </li>
           <li>
-            <strong>Prof. Aicha Sekhari Seklouli</strong><br>
-            <span style="color: var(--text-muted); font-size: 0.9rem;">University Lumière Lyon2, France</span><br>
+            <strong>أ.د. عائشة صخري صقلي</strong><br>
+            <span style="color: var(--text-muted); font-size: 0.9rem;">جامعة لوميير ليون 2، فرنسا</span><br>
             <a href="mailto:aicha.sekhari@univ-lyon2.fr"><i class="fa-solid fa-envelope"></i> aicha.sekhari@univ-lyon2.fr</a>
           </li>
           <li>
-            <strong>Dr. Abdelhakim Cheriet</strong><br>
-            <span style="color: var(--text-muted); font-size: 0.9rem;">National School of AI, Algiers</span><br>
+            <strong>د. عبد الحكيم شريّط</strong><br>
+            <span style="color: var(--text-muted); font-size: 0.9rem;">المدرسة الوطنية العليا للذكاء الاصطناعي، الجزائر</span><br>
             <a href="mailto:abdelhakim.cheriet@ensia.edu.dz"><i class="fa-solid fa-envelope"></i> abdelhakim.cheriet@ensia.edu.dz</a>
           </li>
         </ul>
@@ -420,17 +442,17 @@
   <div id="bibtexModal" class="modal-backdrop">
     <div class="modal-box">
       <div class="modal-header">
-        <h3 style="color: var(--accent-navy);"><i class="fa-solid fa-quote-left"></i> BibTeX Citation Export</h3>
+        <h3 style="color: var(--accent-navy);"><i class="fa-solid fa-quote-left"></i> تصدير اقتباس BibTeX</h3>
         <button class="modal-close" onclick="hideBibtex()">&times;</button>
       </div>
       <pre class="bibtex-code" id="bibtexContent"></pre>
-      <button class="btn-sm" style="width: 100%; justify-content: center; background: var(--tag-bg); color: var(--tag-text); font-weight: 600;" onclick="copyBibtex()"><i class="fa-solid fa-copy"></i> Copy BibTeX to Clipboard</button>
+      <button class="btn-sm" style="width: 100%; justify-content: center; background: var(--tag-bg); color: var(--tag-text); font-weight: 600;" onclick="copyBibtex()"><i class="fa-solid fa-copy"></i> نسخ BibTeX إلى الحافظة</button>
     </div>
   </div>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Dr. Mourad Belhadj. Built for GitHub Pages.</p>
+      <p>&copy; 2026 الدكتور مراد بلحاج. موثق على GitHub Pages.</p>
     </div>
   </footer>
 
@@ -538,7 +560,7 @@
     function copyBibtex() {
       const code = document.getElementById('bibtexContent').textContent;
       navigator.clipboard.writeText(code).then(() => {
-        alert('BibTeX citation copied to clipboard!');
+        alert('تم نسخ اقتباس BibTeX بنجاح!');
       });
     }
   </script>
