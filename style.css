@@ -330,6 +330,21 @@ a:hover {
   margin-bottom: 1.25rem;
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.pub-card-body {
+  flex: 1;
+}
+
+.pub-logo {
+  max-width: 75px;
+  max-height: 55px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .publication-card:hover {
