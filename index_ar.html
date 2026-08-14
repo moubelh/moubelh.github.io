@@ -501,7 +501,11 @@
       <h2 class="section-title"><i class="fa-solid fa-address-book"></i> المراجع الأكاديمية والتواصل</h2>
       
       <div class="card" style="margin-bottom: 2rem;">
-        <h3 style="margin-bottom: 1rem; color: var(--accent-navy);"><i class="fa-solid fa-user-check"></i> المراجع العلمية</h3>
+        <h3 class="ref-section-toggle" onclick="toggleRefSection(this)" style="cursor: pointer; display: flex; align-items: center; justify-content: space-between; margin-bottom: 0; color: var(--accent-navy); user-select: none;">
+          <span><i class="fa-solid fa-user-check"></i> المراجع العلمية <span style="font-size: 0.82rem; font-weight: normal; color: var(--text-muted); margin-right: 0.5rem;">(انقر للعرْض)</span></span>
+          <i class="fa-solid fa-chevron-down ref-section-chevron" style="transition: transform 0.3s ease; color: var(--text-dim);"></i>
+        </h3>
+        <div class="ref-section-collapsible" style="display: none; margin-top: 1.25rem;">
         <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
           <li class="ref-card-content">
             <div class="ref-header-toggle" onclick="toggleRef(this)">
@@ -557,13 +561,14 @@
             <a href="https://www.ensia.edu.dz" target="_blank" title="المدرسة الوطنية العليا للذكاء الاصطناعي">
               <img src="images/logo_ensia.png" alt="المدرسة الوطنية العليا للذكاء الاصطناعي" class="ref-logo">
             </a>
-            <div>
-              <strong><a href="https://scholar.google.com/citations?user=csbftG4AAAAJ" target="_blank" style="color: var(--accent-navy);"><i class="fa-solid fa-graduation-cap"></i> د. عبد الحكيم شريّط</a></strong><br>
-              <span style="color: var(--text-muted); font-size: 0.88rem;">المدرسة الوطنية العليا للذكاء الاصطناعي (ENSIA)</span><br>
-              <a href="mailto:abdelhakim.cheriet@ensia.edu.dz" style="font-size: 0.85rem;"><i class="fa-solid fa-envelope"></i> abdelhakim.cheriet@ensia.edu.dz</a>
+            <div class="ref-body-collapsible">
+              <span style="color: var(--text-muted); font-size: 0.88rem;"><i class="fa-solid fa-building-columns"></i> المدرسة الوطنية العليا للذكاء الاصطناعي، الجزائر</span><br>
+              <a href="https://scholar.google.com/citations?user=csbftG4AAAAJ" target="_blank" style="font-size: 0.85rem; color: var(--accent-navy); margin-top: 0.3rem; display: inline-block;"><i class="fa-solid fa-graduation-cap"></i> الملف العلمي Google Scholar</a><br>
+              <a href="mailto:abdelhakim.cheriet@ensia.edu.dz" style="font-size: 0.85rem; margin-top: 0.2rem; display: inline-block;"><i class="fa-solid fa-envelope"></i> abdelhakim.cheriet@ensia.edu.dz</a>
             </div>
           </li>
         </ul>
+        </div>
       </div>
 
     </section>
@@ -704,9 +709,19 @@
       });
     }
 
-    function toggleRef(el) {
-      const parent = el.closest('.ref-card-content');
-      parent.classList.toggle('open');
+    function toggleRefSection(el) {
+      const card = el.closest('.card');
+      const collapsible = card.querySelector('.ref-section-collapsible');
+      const chevron = el.querySelector('.ref-section-chevron');
+      if (collapsible.style.display === 'none' || !collapsible.style.display) {
+        collapsible.style.display = 'block';
+        chevron.style.transform = 'rotate(180deg)';
+        chevron.style.color = 'var(--accent-primary)';
+      } else {
+        collapsible.style.display = 'none';
+        chevron.style.transform = 'rotate(0deg)';
+        chevron.style.color = 'var(--text-dim)';
+      }
     }
   </script>
 
