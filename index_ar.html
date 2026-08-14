@@ -283,6 +283,19 @@
 
       <div class="publication-card">
         <div class="pub-card-body">
+          <div class="pub-header"><span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span><span class="pub-type"><i class="fa-solid fa-microchip"></i> ورشة عمل ICPR RRPR Springer</span></div>
+          <div class="pub-title">Reproducibility Companion Paper: Comparative Evaluation of Deep Learning Architectures and Training Strategies for Diabetic Retinopathy Classification</div>
+          <div class="pub-authors"><i class="fa-solid fa-users"></i> Benhabireche, M. L., <strong>Belhadj, M.</strong>, Tamzalit, D., & Aiadi, O.</div>
+          <div class="pub-venue"><i class="fa-solid fa-map-pin"></i> Sixth Workshop on Reproducible Research in Pattern Recognition (RRPR 2026), ICPR 2026, Lyon, France.</div>
+          <div class="pub-actions">
+            <button class="btn-sm" onclick="showBibtex('benhabireche2026reproducibility')"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+          </div>
+        </div>
+        <img src="images/logo_springerlink.png" alt="شعار SpringerLink" class="pub-logo">
+      </div>
+
+      <div class="publication-card">
+        <div class="pub-card-body">
           <div class="pub-header"><span class="pub-year"><i class="fa-solid fa-calendar"></i> 2026</span><span class="pub-type"><i class="fa-solid fa-microchip"></i> مؤتمر ICPR Springer</span></div>
           <div class="pub-title">Comparative Evaluation of Deep Learning Architectures and Training Strategies for Diabetic Retinopathy Classification</div>
           <div class="pub-authors"><i class="fa-solid fa-users"></i> BenHabireche, M. L., <strong>Belhadj, M.</strong>, Tamzalit, D. & Aiadi, O.</div>
@@ -534,7 +547,35 @@
   </footer>
 
   <script>
+      <!-- Modal 10: Benhabireche 2026 Reproducibility -->
+      <div id="modal-benhabireche2026reproducibility" class="modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeBibtex('benhabireche2026reproducibility')">&times;</span>
+          <h3 style="margin-top: 0; color: var(--accent-navy);"><i class="fa-solid fa-quote-right"></i> اقتباس BibTeX</h3>
+          <pre id="bib-benhabireche2026reproducibility">@inproceedings{benhabireche2026reproducibility,
+  title={Reproducibility Companion Paper: Comparative Evaluation of Deep Learning Architectures and Training Strategies for Diabetic Retinopathy Classification},
+  author={Benhabireche, Mohamed Lamine and Belhadj, Mourad and Tamzalit, Dalila and Aiadi, Oussama},
+  booktitle={Sixth Workshop on Reproducible Research in Pattern Recognition (RRPR 2026), ICPR 2026},
+  year={2026},
+  month={August},
+  address={Lyon, France}
+}</pre>
+          <div style="display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 1rem;">
+            <button class="btn-sm" onclick="copyBibtex('bib-benhabireche2026reproducibility')"><i class="fa-solid fa-copy"></i> نسخ BibTeX</button>
+            <button class="btn-sm" onclick="closeBibtex('benhabireche2026reproducibility')">إغلاق</button>
+          </div>
+        </div>
+      </div>
+
     const bibtexEntries = {
+      'benhabireche2026reproducibility': `@inproceedings{benhabireche2026reproducibility,
+  title={Reproducibility Companion Paper: Comparative Evaluation of Deep Learning Architectures and Training Strategies for Diabetic Retinopathy Classification},
+  author={Benhabireche, Mohamed Lamine and Belhadj, Mourad and Tamzalit, Dalila and Aiadi, Oussama},
+  booktitle={Sixth Workshop on Reproducible Research in Pattern Recognition (RRPR 2026), ICPR 2026},
+  year={2026},
+  month={August},
+  address={Lyon, France}
+}`,
       'benhabireche2026': `@inproceedings{benhabireche2026comparative,
   title={Comparative Evaluation of Deep Learning Architectures and Training Strategies for Diabetic Retinopathy Classification},
   author={BenHabireche, Mohamed Lamine and Belhadj, Mourad and Tamzalit, Dalila and Aiadi, Oussama},
