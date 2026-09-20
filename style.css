@@ -588,6 +588,27 @@ footer {
 
 /* News and Academic Impact */
 .news-grid,
+.impact-section {
+  margin-bottom: 3rem;
+}
+
+.impact-group {
+  margin-bottom: 1.25rem;
+}
+
+.impact-group-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--accent-navy);
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.impact-group-title i {
+  color: var(--accent-primary);
+}
+
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -631,12 +652,51 @@ footer {
 }
 
 .impact-card {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(145deg, #ffffff, #f8fafc);
   border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-primary);
   border-radius: 12px;
   padding: 1.15rem;
   text-align: center;
   box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.impact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.impact-card--defended {
+  border-top-color: #16a34a;
+  background: linear-gradient(145deg, #ffffff, #f0fdf4);
+}
+
+.impact-card--defended .impact-icon,
+.impact-card--defended .impact-value {
+  color: #15803d;
+}
+
+.impact-card--submitted {
+  border-top-color: #f59e0b;
+  background: linear-gradient(145deg, #ffffff, #fffbeb);
+}
+
+.impact-card--submitted .impact-icon,
+.impact-card--submitted .impact-value {
+  color: #b45309;
+}
+
+.impact-card--ongoing {
+  border-top-color: #2563eb;
+  background: linear-gradient(145deg, #ffffff, #eff6ff);
+}
+
+.impact-card--ongoing .impact-icon,
+.impact-card--ongoing .impact-value {
+  color: #1d4ed8;
 }
 
 .impact-icon {
