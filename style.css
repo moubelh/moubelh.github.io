@@ -787,3 +787,100 @@ footer {
     font-size: 0.7rem;
   }
 }
+
+
+/* International collaboration */
+.collaboration-section {
+  margin-bottom: 3rem;
+}
+
+.collaboration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.collaboration-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 285px;
+  padding: 1.25rem;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-primary);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.collaboration-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.collaboration-country {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--accent-navy);
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.country-flag {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 2px rgba(15, 23, 42, 0.14));
+}
+
+.institution-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 72px;
+  padding: 0.65rem;
+  margin-bottom: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.institution-logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.institution-logos img {
+  width: auto;
+  max-width: 115px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.collaboration-card h3 {
+  color: var(--accent-navy);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.55rem;
+}
+
+.collaboration-card p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .collaboration-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collaboration-card {
+    min-height: auto;
+  }
+}
